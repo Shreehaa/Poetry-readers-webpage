@@ -1,0 +1,50 @@
+<html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6)
+{  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }
+}
+function myFunction(x) {
+ x.style.background = "pink";
+}
+
+
+</script>  
+<body background="https://c4.wallpaperflare.com/wallpaper/963/694/457/spots-background-light-blur-wallpaper-preview.jpg";background-no-repeat>  
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+Name:      <input type="text" size="65"name="name" id="input1" onfocus="myFunction(this)"><br/>  
+<br>
+Password:  <input type="password" size="65" name="password" id="input1" onfocus="myFunction(this)"><br/>  
+<br>
+<br>
+<p>Address: <input type="text" size="65" name="Address" id="input1" onfocus="myFunction(this)" />
+</p>
+<br />
+<p>E-mail Address: <input type="text" size="65" name="EMail" id="input1" onfocus="myFunction(this)" /></p>
+<br />
+<p>Telephone: <input type="text" size="65" name="Telephone" id="input1" onfocus="myFunction(this)" /></p>
+<br />
+<p>
+    SELECT YOUR COUNTRY
+    <select type="text" value="" name="Subject" id="input1" onfocus="myFunction(this)">
+        <option>INDIA</option>
+        <option>AUSTRALIA</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>SRI LANKHA</option>
+    </select>
+</p>
+<input type="submit" value="register" id="input1" onfocus="focusevent()">  
+</form>  
+</body>
+</html>
